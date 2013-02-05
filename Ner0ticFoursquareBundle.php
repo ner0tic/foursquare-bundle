@@ -1,11 +1,11 @@
 <?php
 
-namespace Ddnet\FoursquareBundle;
+namespace Ner0tic\FoursquareBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 
-class DdnetFoursquareBundle extends Bundle
+class Ner0ticFoursquareBundle extends Bundle
 {
     /**
      *      * {@inheritdoc}

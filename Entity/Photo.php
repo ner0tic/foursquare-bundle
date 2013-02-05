@@ -1,8 +1,8 @@
 <?php
 
-namespace Ddnet\FoursquareBundle\Entity;
+namespace Ner0tic\FoursquareBundle\Entity;
 
-use Ddnet\FoursquareBundle\Entity\User as fsUSer;
+use Ner0tic\FoursquareBundle\Entity\User as fsUSer;
 
 class Photo {
 
@@ -63,7 +63,7 @@ class Photo {
       $this->user = new fsUser();
       $this->user->fromArray($user);
     }
-    else throw new FoursquareException('User should be an array or of type Ddnet\FoursquareBundle\Entity\User');
+    else throw new FoursquareException('User should be an array or of type Ner0tic\FoursquareBundle\Entity\User');
     return $this;
   }      
   

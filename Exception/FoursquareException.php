@@ -1,5 +1,5 @@
 <?php
-namespace Ddnet\FoursquareBundle\Exception;
+namespace Ner0tic\FoursquareBundle\Exception;
 
 use \Exception;
 

@@ -1,5 +1,5 @@
 <?php
-namespace Ddnet\FoursquareBundle\Curl\Manager;
+namespace Ner0tic\FoursquareBundle\Curl\Manager;
 
 class CurlManager 
 {

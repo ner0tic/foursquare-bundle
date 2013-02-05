@@ -1,8 +1,8 @@
 <?php
 
-namespace Ddnet\FoursquareBundle\Entity;
+namespace Ner0tic\FoursquareBundle\Entity;
 
-use Ddnet\FoursquareBundle\Entity\Category;
+use Ner0tic\FoursquareBundle\Entity\Category;
 
 class Event 
 {
@@ -41,7 +41,7 @@ class Event
      * 
      * @param string $id
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Event
+     * @return \Ner0tic\FoursquareBundle\Entity\Event
      */
     public function setId( $id )
     {
@@ -65,7 +65,7 @@ class Event
      * 
      * @param string $name
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Event
+     * @return \Ner0tic\FoursquareBundle\Entity\Event
      */
     public function setName( $name )
     {
@@ -103,7 +103,7 @@ class Event
      * Set Categories
      * 
      * @param array $categories
-     * @return \Ddnet\FoursquareBundle\Entity\Venue
+     * @return \Ner0tic\FoursquareBundle\Entity\Venue
      * @throws FoursquareException
      */
     public function setCategories(  array $categories = array()  ) 
@@ -116,8 +116,8 @@ class Event
     /**
      * Add A Category
      * 
-     * @param \Ddnet\FoursquareBundle\Entity\Category $category
-     * @return \Ddnet\FoursquareBundle\Entity\Venue
+     * @param \Ner0tic\FoursquareBundle\Entity\Category $category
+     * @return \Ner0tic\FoursquareBundle\Entity\Venue
      * @throws FoursquareException
      */
     public function addCategory( Category $category ) 
@@ -132,7 +132,7 @@ class Event
      * 
      * @param boolean $boolean
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Event
+     * @return \Ner0tic\FoursquareBundle\Entity\Event
      */
     public function isAllDay( $boolean = null )
     {
@@ -168,7 +168,7 @@ class Event
      * 
      * @param datetime $date
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Event
+     * @return \Ner0tic\FoursquareBundle\Entity\Event
      */
     public function setDate( $date )
     {
@@ -192,7 +192,7 @@ class Event
      * 
      * @param string $text
 
-     * @return \Ddnet\FoursquareBundle\Entity\Event
+     * @return \Ner0tic\FoursquareBundle\Entity\Event
      */
     public function setText( $text )
     {
@@ -215,7 +215,7 @@ class Event
      * Set URL
      * 
      * @param string $url
-     * @return \Ddnet\FoursquareBundle\Entity\Event
+     * @return \Ner0tic\FoursquareBundle\Entity\Event
      */
     public function setUrl( $url )
     {
@@ -240,7 +240,7 @@ class Event
      * @param array $images
      * @param boolean $merge
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Event
+     * @return \Ner0tic\FoursquareBundle\Entity\Event
      */
     public function setImages( array $images = array(), $merge = false )
     {
@@ -261,7 +261,7 @@ class Event
      * 
      * @param string $image
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Event
+     * @return \Ner0tic\FoursquareBundle\Entity\Event
      */
     public function addImage( $image )
     {
@@ -285,7 +285,7 @@ class Event
      * 
      * @param string $provider
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Event
+     * @return \Ner0tic\FoursquareBundle\Entity\Event
      */
     public function setProvider( $provider )
     {

@@ -1,17 +1,17 @@
 ## 1. Installation
-Add DdnetFoursquareBundle to your composer.json file accordingly.
+Add Ner0ticFoursquareBundle to your composer.json file accordingly.
 ```js
 {
   "require": {
-    "ddnet/foursquare-bundle": "*"
+    "Ner0tic/foursquare-bundle": "*"
   }
 }
 ```
 Now use composer to add the bundle to your application.
 ```bash
-$ php composer.phar update ddnet/foursquare-bundle
+$ php composer.phar update Ner0tic/foursquare-bundle
 ```
-Composer will place the bundle in the `vendors/ddnet` directory.
+Composer will place the bundle in the `vendors/Ner0tic` directory.
 
 #### Enable Bundle
 Enable the bundle within the kernel.
@@ -21,7 +21,7 @@ Enable the bundle within the kernel.
   {
     $bundles = array(
       // ...
-      new Ddnet\FoursquareBundle\DdnetFoursquareBundle(),
+      new Ner0tic\FoursquareBundle\Ner0ticFoursquareBundle(),
     );
   }
 ```

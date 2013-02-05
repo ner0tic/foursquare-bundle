@@ -1,11 +1,11 @@
 <?php
 
-namespace Ddnet\FoursquareBundle\Entity;
+namespace Ner0tic\FoursquareBundle\Entity;
 
-use Ddnet\FoursquareBundle\Entity\Location,
-    Ddnet\FoursquareBundle\Entity\Category,
-    Ddnet\FoursquareBundle\Entity\Tip,
-    Ddnet\FoursquareBundle\Entity\User;
+use Ner0tic\FoursquareBundle\Entity\Location,
+    Ner0tic\FoursquareBundle\Entity\Category,
+    Ner0tic\FoursquareBundle\Entity\Tip,
+    Ner0tic\FoursquareBundle\Entity\User;
 
 class Venue 
 {
@@ -63,7 +63,7 @@ class Venue
      * 
      * @param integer $id
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Venue
+     * @return \Ner0tic\FoursquareBundle\Entity\Venue
      */
     public function setId(  $id   )
     {
@@ -87,7 +87,7 @@ class Venue
      * 
      * @param string $name
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Venue
+     * @return \Ner0tic\FoursquareBundle\Entity\Venue
      */
     public function setName(  $name   ) 
     {
@@ -130,7 +130,7 @@ class Venue
     /**
      * Set Location Info
      * 
-     * @param array|Ddnet\FoursquareBundle\Entity\Location $location
+     * @param array|Ner0tic\FoursquareBundle\Entity\Location $location
      */
     public function setLocation(  $location   ) 
     {
@@ -145,7 +145,7 @@ class Venue
         }
         else
         {
-            throw new FoursquareException(  'Location should be of type Ddnet\FoursquareBundle\Entity\Location or an array collection of the same type.'  );
+            throw new FoursquareException(  'Location should be of type Ner0tic\FoursquareBundle\Entity\Location or an array collection of the same type.'  );
         }
         
         return $this;
@@ -164,7 +164,7 @@ class Venue
      * Set Categories
      * 
      * @param array $categories
-     * @return \Ddnet\FoursquareBundle\Entity\Venue
+     * @return \Ner0tic\FoursquareBundle\Entity\Venue
      * @throws FoursquareException
      */
     public function setCategories(  array $categories = array()  ) 
@@ -203,10 +203,10 @@ class Venue
     /**
      * Add A Primary Category (will overwrite existing value)
      * 
-     * @param \Ddnet\FoursquareBundle\Entity\Category $category
+     * @param \Ner0tic\FoursquareBundle\Entity\Category $category
      * @param boolean $addIfNone
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Venue
+     * @return \Ner0tic\FoursquareBundle\Entity\Venue
      */
     public function addPrimaryCategory( Category $category, $addIfNone = true ) 
     {
@@ -232,8 +232,8 @@ class Venue
     /**
      * Add A Category
      * 
-     * @param \Ddnet\FoursquareBundle\Entity\Category $category
-     * @return \Ddnet\FoursquareBundle\Entity\Venue
+     * @param \Ner0tic\FoursquareBundle\Entity\Category $category
+     * @return \Ner0tic\FoursquareBundle\Entity\Venue
      * @throws FoursquareException
      */
     public function addCategory( Category $category ) 
@@ -258,7 +258,7 @@ class Venue
      * 
      * @param boolean $verified
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Venue
+     * @return \Ner0tic\FoursquareBundle\Entity\Venue
      */
     public function setVerified( $verified ) 
     {
@@ -282,7 +282,7 @@ class Venue
      * 
      * @param array $stats
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Venue
+     * @return \Ner0tic\FoursquareBundle\Entity\Venue
      */
     public function setStats( array $stats = array() ) 
     {
@@ -306,7 +306,7 @@ class Venue
      * 
      * @param string $url
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Venue
+     * @return \Ner0tic\FoursquareBundle\Entity\Venue
      */
     public function setUrl( $url ) 
     {
@@ -340,7 +340,7 @@ class Venue
      * 
      * @param array $likes
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Venue
+     * @return \Ner0tic\FoursquareBundle\Entity\Venue
      */
     public function setLikes( $likes ) 
     {
@@ -374,7 +374,7 @@ class Venue
      * 
      * @param array $specials
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Venue
+     * @return \Ner0tic\FoursquareBundle\Entity\Venue
      */
     public function setSpecials( $specials ) 
     {
@@ -398,7 +398,7 @@ class Venue
      * 
      * @param datetime $createdAt
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Venue
+     * @return \Ner0tic\FoursquareBundle\Entity\Venue
      */
     public function setCreatedAt( $createdAt ) 
     {
@@ -412,7 +412,7 @@ class Venue
      * 
      * @param boolean $count
      * 
-     * @return integer|Ddnet\FoursquareBundle\Entity\User
+     * @return integer|Ner0tic\FoursquareBundle\Entity\User
      */
     public function getMayor( $count = false ) 
     {
@@ -427,10 +427,10 @@ class Venue
     /**
      * Set The Mayor
      * 
-     * @param \Ddnet\FoursquareBundle\Entity\User $user
+     * @param \Ner0tic\FoursquareBundle\Entity\User $user
      * @param boolean $count
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Venue
+     * @return \Ner0tic\FoursquareBundle\Entity\Venue
      */
     public function setMayor( $user = null,$count = 0 ) 
     {
@@ -464,7 +464,7 @@ class Venue
      * 
      * @param array $tips
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Venue
+     * @return \Ner0tic\FoursquareBundle\Entity\Venue
      */
     public function setTips( array $tips = array() ) 
     {
@@ -476,7 +476,7 @@ class Venue
     /**
      * Get A Venue Tip
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Tip
+     * @return \Ner0tic\FoursquareBundle\Entity\Tip
      */
     public function getTip( Tip $tip ) 
     {
@@ -493,7 +493,7 @@ class Venue
       $this->tips[] = $tip;
       return $this;
     }
-    else  throw new FoursquareException( 'Tip should be an array or a single entity of type Ddnet\FoursquareBundle\Entity\Tip'  );
+    else  throw new FoursquareException( 'Tip should be an array or a single entity of type Ner0tic\FoursquareBundle\Entity\Tip'  );
   } 
   
   protected $tags = array();

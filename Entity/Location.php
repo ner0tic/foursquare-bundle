@@ -1,7 +1,7 @@
 <?php
-namespace Ddnet\FoursquareBundle\Entity;
+namespace Ner0tic\FoursquareBundle\Entity;
 
-use Ddnet\FoursquareBundle\Entity\Venue;
+use Ner0tic\FoursquareBundle\Entity\Venue;
 
 class Location 
 {
@@ -22,7 +22,7 @@ class Location
     /**
      * Get Venue
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Venue
+     * @return \Ner0tic\FoursquareBundle\Entity\Venue
      */
     public function getVenue() 
     { 
@@ -32,9 +32,9 @@ class Location
     /**
      * Set Venue
      * 
-     * @param \Ddnet\FoursquareBundle\Entity\Venue $venue
+     * @param \Ner0tic\FoursquareBundle\Entity\Venue $venue
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Location
+     * @return \Ner0tic\FoursquareBundle\Entity\Location
      */
     public function setVenue( Venue $venue )
     {
@@ -58,7 +58,7 @@ class Location
      * 
      * @param string $address
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Location
+     * @return \Ner0tic\FoursquareBundle\Entity\Location
      */
     public function setAddress( $address ) 
     {
@@ -81,7 +81,7 @@ class Location
      * Set Cross Street
      * 
      * @param string $cross_street
-     * @return \Ddnet\FoursquareBundle\Entity\Location
+     * @return \Ner0tic\FoursquareBundle\Entity\Location
      */
     public function setCrossStreet( $cross_street ) 
     {
@@ -115,7 +115,7 @@ class Location
      * 
      * @param float $latitude
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Location
+     * @return \Ner0tic\FoursquareBundle\Entity\Location
      */
     public function setLat( $latitude ) 
     {
@@ -161,7 +161,7 @@ class Location
      * 
      * @param float $longitude
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Location
+     * @return \Ner0tic\FoursquareBundle\Entity\Location
      */
     public function setLng( $longitude ) 
     {
@@ -190,7 +190,7 @@ class Location
      * 
      * @param string $postal_code
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Location
+     * @return \Ner0tic\FoursquareBundle\Entity\Location
      */
     public function setPostalCode( $postal_code ) 
     {
@@ -240,7 +240,7 @@ class Location
      * Set Zone
      * @param string $zone
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Location
+     * @return \Ner0tic\FoursquareBundle\Entity\Location
      */
     public function setZone( $zone ) 
     {
@@ -254,7 +254,7 @@ class Location
      * 
      * @param string $state
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Location
+     * @return \Ner0tic\FoursquareBundle\Entity\Location
      */
     public function setState( $state ) 
     { 
@@ -315,7 +315,7 @@ class Location
      * 
      * @param string $cc
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Location
+     * @return \Ner0tic\FoursquareBundle\Entity\Location
      */
     public function setCC( $cc )
     {
@@ -328,7 +328,7 @@ class Location
      * Set Country Code
      * 
      * @param string $code
-     * @return \Ddnet\FoursquareBundle\Entity\Location
+     * @return \Ner0tic\FoursquareBundle\Entity\Location
      */
     public function setCountryCode( $code ) 
     { 
@@ -339,7 +339,7 @@ class Location
      * Set Country Code (Small)
      * 
      * @param string $code
-     * @return \Ddnet\FoursquareBundle\Entity\Location
+     * @return \Ner0tic\FoursquareBundle\Entity\Location
      */
     public function setCode( $code ) 
     { 

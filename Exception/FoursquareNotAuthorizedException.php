@@ -1,7 +1,7 @@
 <?php
-namespace Ddnet\FoursquareBundle\xception;
+namespace Ner0tic\FoursquareBundle\xception;
 
-use Ddnet\FoursquareBundle\Exception\FoursquareException;
+use Ner0tic\FoursquareBundle\Exception\FoursquareException;
 
 class FoursquareNotAuthorizedException extends FoursquareException
 {

@@ -1,7 +1,7 @@
 ## 2. Usage
 Include needed library.
 ```php
-  use Ddnet\FoursquareBundle\Foursquare;
+  use Ner0tic\FoursquareBundle\Foursquare;
 ```
 Generate an instance.
 ```php
@@ -9,7 +9,7 @@ Generate an instance.
 ```
 Get an instance of yourself (if logged into foursquare.)
 ```php
-  use Ddnet\FoursquareBundle\Entity\User; 
+  use Ner0tic\FoursquareBundle\Entity\User; 
 
   $user = new User();
   

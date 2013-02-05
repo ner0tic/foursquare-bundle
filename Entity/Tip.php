@@ -1,8 +1,8 @@
 <?php
-namespace Ddnet\FoursquareBundle\Entity;
+namespace Ner0tic\FoursquareBundle\Entity;
 
-use Ddnet\FoursquareBundle\Entity\Venue,
-    Ddnet\FoursquareBundle\Entity\User;
+use Ner0tic\FoursquareBundle\Entity\Venue,
+    Ner0tic\FoursquareBundle\Entity\User;
 
 class Tip
 {
@@ -48,7 +48,7 @@ class Tip
      * 
      * @param string $id
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Tip
+     * @return \Ner0tic\FoursquareBundle\Entity\Tip
      */
     public function setId( $id )
     {
@@ -72,7 +72,7 @@ class Tip
      * 
      * @param datetime $createdAt
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Tip
+     * @return \Ner0tic\FoursquareBundle\Entity\Tip
      */
     public function setCreatedat( $createdAt )
     {
@@ -96,7 +96,7 @@ class Tip
      * 
      * @param string $text
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Tip
+     * @return \Ner0tic\FoursquareBundle\Entity\Tip
      */
     public function setText( $text )
     {
@@ -120,7 +120,7 @@ class Tip
      * 
      * @param string $url
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Tip
+     * @return \Ner0tic\FoursquareBundle\Entity\Tip
      */
     public function setCanonicalUrl( $url )
     {
@@ -153,7 +153,7 @@ class Tip
      * Set Likes
      * 
      * @param array $likes
-     * @return \Ddnet\FoursquareBundle\Entity\Tip
+     * @return \Ner0tic\FoursquareBundle\Entity\Tip
      */
     public function setLikes( array $likes ) {
       $this->likes = $likes;
@@ -179,7 +179,7 @@ class Tip
     
     /**
      * Get Venue
-     * @return \Ddnet\FoursquareBundle\Entity\Venue
+     * @return \Ner0tic\FoursquareBundle\Entity\Venue
      */
     public function getVenue()
     {
@@ -189,9 +189,9 @@ class Tip
     /**
      * Set Venue
      * 
-     * @param \Ddnet\FoursquareBundle\Entity\Venue $venue
+     * @param \Ner0tic\FoursquareBundle\Entity\Venue $venue
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Tip
+     * @return \Ner0tic\FoursquareBundle\Entity\Tip
      */
     public function setVenue( Venue $venue )
     {
@@ -202,7 +202,7 @@ class Tip
     
     /**
      * Get User
-     * @return \Ddnet\FoursquareBundle\Entity\User
+     * @return \Ner0tic\FoursquareBundle\Entity\User
      */
     public function getUser()
     {
@@ -212,9 +212,9 @@ class Tip
     /**
      * Set User
      * 
-     * @param \Ddnet\FoursquareBundle\Entity\User $user
+     * @param \Ner0tic\FoursquareBundle\Entity\User $user
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Tip
+     * @return \Ner0tic\FoursquareBundle\Entity\Tip
      */
     public function setUser( User $user )
     {
@@ -248,7 +248,7 @@ class Tip
      * 
      * @param array $todo
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Tip
+     * @return \Ner0tic\FoursquareBundle\Entity\Tip
      */
     public function setTodo( array $todo ) {
       $this->todo = $todo;
@@ -279,7 +279,7 @@ class Tip
      * Set Listed
      * 
      * @param array $listed
-     * @return \Ddnet\FoursquareBundle\Entity\Tip
+     * @return \Ner0tic\FoursquareBundle\Entity\Tip
      */
     public function setListed( array $listed ) {
       $this->listed = $listed;
@@ -310,7 +310,7 @@ class Tip
      * Set Saves
      * 
      * @param array $saves
-     * @return \Ddnet\FoursquareBundle\Entity\Tip
+     * @return \Ner0tic\FoursquareBundle\Entity\Tip
      */
     public function setSaves( array $saves ) {
       $this->saves = $saves;

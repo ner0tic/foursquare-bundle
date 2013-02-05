@@ -1,11 +1,11 @@
 <?php
-namespace Ddnet\FoursquareBundle\Foursquare;
+namespace Ner0tic\FoursquareBundle\Foursquare;
 
 use \ArrayAccess,
     \Countable,
     \IteratorAggregate,
 
-    Ddnet\FoursquareBundle\Exception\FoursquareException;
+    Ner0tic\FoursquareBundle\Exception\FoursquareException;
 
 
 class FoursquareJson implements ArrayAccess, Countable, IteratorAggregate 

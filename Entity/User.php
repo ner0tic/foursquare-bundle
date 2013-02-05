@@ -1,82 +1,223 @@
 <?php
 
-namespace Ddnet\FoursquareBundle\Entity;
+namespace Ner0tic\FoursquareBundle\Entity;
 
-//use Ddnet\FoursquareBundle\Entity\List as fsList;
-use Ddnet\FoursquareBundle\Entity\Tip as fsTip;
-use Ddnet\FoursquareBundle\Entity\Photo as fsPhoto;
+use Ner0tic\FoursquareBundle\Entity\fsList,
+    Ner0tic\FoursquareBundle\Entity\Tip,
+    Ner0tic\FoursquareBundle\Entity\Photo;
 
-class User {
+class User 
+{
 
-  protected $id;
-  public function getId() { return $this->id; }
-  public function setId($id) {
-    $this->id = $id;
-    return $this;
-  }
-
-  protected $firstName;
-  public function getFirstName() { return $this->firstName; }
-  public function setFirstName($firstName) {
-    $this->firstName = $firstName;
-    return $this;
-  }
-  
-  protected $lastName;
-  public function getLastName() { return $this->lastName; }
-  public function setLastName($lastName) {
-    $this->lastName = $lastName;
-    return $this;
-  }
-  
-  protected $relationship = 'self';
-  public function getRelationship() { return $this->relationship; }
-  public function setRelationship($r) {
-    $this->relationship = $r;
-    return $this;
-  }
-  
-  protected $friends = array();
-  public function getFriends() { return $this->friends; }
-  public function setFriends($friends) {
-    $this->friends = $friends;
-    return $this;
-  }
-  
-  protected $type = "user";
-  public function getType() { return $this->type; }
-  public function setType($type) {
-    $this->type = $type;
-    return $this;
-  }
-  
-  protected $lists = array();
-  public function getLists() { return $this->lists; }
-  public function setLists($lists) {
-    if($lists instanceof \Self) $this->lists = array($lists);
-    elseif(is_array($lists)) {
-      $this->lists = $lists;
+    protected 
+        $id,
+        $firstName,
+        $lastName,
+        
+        $relationship = 'self',
+        $friends = array(),
+        
+        $type = "user",
+        $lists = array();
+    
+    /**
+     * Get Id
+     * 
+     * @return string
+     */
+    public function getId() 
+    { 
+        return $this->id; 
     }
-    else  throw new FoursquareException('List should be an array of List Entities or a single entity of type Ddnet\FoursquareBundle\Entity\List');
-    return $this;
-  }
-  public function getList() {
-    foreach($list as $lists) {
-      if($list->getPrimary()) return $list;
+  
+    /**
+     * Set Id
+     * 
+     * @param type $id
+     * @return \Ner0tic\FoursquareBundle\Entity\User
+     */
+    public function setId( $id ) 
+    {
+        $this->id = $id;
+    
+        return $this;
     }
-    return $this->lists[0];
-  }
-  public function addList($list) {   
-    if($list instanceof \Self) {
-      $this->lists[] = $list;
-      return $this;
+
+    /**
+     * Get User's First Name
+     * 
+     * @return string
+     */
+    public function getFirstName() 
+    { 
+        return $this->firstName; 
     }
+  
+    /**
+     * Set User's First Name
+     * 
+     * @param string $firstName
+     * 
+     * @return \Ner0tic\FoursquareBundle\Entity\User
+     */
+    public function setFirstName( $firstName ) 
+    {
+        $this->firstName = $firstName;
+    
+        return $this;
+    }
+  
+    /**
+     * Get Last Name
+     * 
+     * @return string
+     */
+    public function getLastName() 
+    { 
+        return $this->lastName; 
+    }
+  
+    /**
+     * Set Last Name
+     * 
+     * @param string $lastName
+     * 
+     * @return \Ner0tic\FoursquareBundle\Entity\User
+     */
+    public function setLastName( $lastName )
+    {
+        $this->lastName = $lastName;
+    
+        return $this;
+    }
+  
+    /**
+     * Get Relationship
+     * 
+     * @return string
+     */
+    public function getRelationship() 
+    { 
+        return $this->relationship; 
+    }
+  
+    /**
+     * Set Relationship
+     * 
+     * @param string $relationship
+     * 
+     * @return \Ner0tic\FoursquareBundle\Entity\User
+     */
+    public function setRelationship( $relationship ) 
+    {
+        $this->relationship = $relationship;
+    
+        return $this;
+    }
+  
+    /**
+     * Get Friends
+     * 
+     * @return array
+     */
+    public function getFriends() 
+    { 
+        return $this->friends; 
+    }
+  
+    /**
+     * Set Friends
+     * 
+     * @param array $friends
+     * 
+     * @return \Ner0tic\FoursquareBundle\Entity\User
+     */
+    public function setFriends( $friends ) 
+    {
+        $this->friends = $friends;
+    
+        return $this;
+    }
+  
+    /**
+     * Get Type
+     * 
+     * @return string
+     */
+    public function getType() 
+    { 
+        return $this->type; 
+    }
+  
+    /**
+     * Set Type
+     * 
+     * @param string $type
+     * 
+     * @return \Ner0tic\FoursquareBundle\Entity\User
+     */
+    public function setType( $type ) 
+    {
+        $this->type = $type;
+    
+        return $this;
+    }
+  
+    /**
+     * Get Lists
+     * @return array
+     */
+    public function getLists() 
+    { 
+        return $this->lists; 
+    }
+  
+    /**
+     * Set Lists
+     * 
+     * @param array $lists
+     * @return \Ner0tic\FoursquareBundle\Entity\User
+     */
+    public function setLists( array $lists = array() ) 
+    {
+        $this->lists = $lists;
+        
+        return $this;
+    }
+    
+    /**
+     * Get Lists
+     * @return array
+     */
+    public function getList() 
+    {
+        foreach( $lists as $list ) 
+        {
+            if( $list->getPrimary() )
+            {
+                return $list;
+            }
+        }
+    
+        return $this->lists[];
+    }
+    
+    public function addList( fsList $list ) 
+    {   
+        if( !in_array( $list, $this->lists ) )
+        {
+            $this->lists[] = $list;
+        }
+      
+        return $this;
+    }
+    
     elseif(is_array($list)) {
       $c = new \Self();
       $c->fromArray($list);
       return $this;
     }
-    else  throw new FoursquareException('List should be an array or a single entity of type Ddnet\FoursquareBundle\Entity\List');
+    else  throw new FoursquareException('List should be an array or a single entity of type Ner0tic\FoursquareBundle\Entity\List');
   }    
   
   protected $tips = array();
@@ -86,7 +227,7 @@ class User {
     elseif(is_array($tips)) {
       $this->tips = $tips;
     }
-    else  throw new FoursquareException('Tip should be an array of Tip Entities or a single entity of type Ddnet\FoursquareBundle\Entity\Tip');
+    else  throw new FoursquareException('Tip should be an array of Tip Entities or a single entity of type Ner0tic\FoursquareBundle\Entity\Tip');
     return $this;
   }
   public function getTip() {
@@ -106,7 +247,7 @@ class User {
       $this->tips[] = $tip;
       return $this;
     }
-    else  throw new FoursquareException('Tip should be an array or a single entity of type Ddnet\FoursquareBundle\Entity\Tip');
+    else  throw new FoursquareException('Tip should be an array or a single entity of type Ner0tic\FoursquareBundle\Entity\Tip');
   } 
   
   protected $gender = 'unisex';
@@ -190,7 +331,7 @@ class User {
     elseif(is_array($photos)) {
       $this->photos = $photos;
     }
-    else  throw new FoursquareException('Photo should be an array of Photo Entities or a single entity of  type Ddnet\FoursquareBundle\Entity\Photo');
+    else  throw new FoursquareException('Photo should be an array of Photo Entities or a single entity of  type Ner0tic\FoursquareBundle\Entity\Photo');
     return $this;
   }
   

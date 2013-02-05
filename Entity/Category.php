@@ -1,7 +1,7 @@
 <?php
-namespace Ddnet\FoursquareBundle\Entity;
+namespace Ner0tic\FoursquareBundle\Entity;
 
-use Ddnet\FoursquareBundle\Exception\FoursquareException;
+use Ner0tic\FoursquareBundle\Exception\FoursquareException;
 
 class Category 
 {
@@ -34,7 +34,7 @@ class Category
      * 
      * @param string $id
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Category
+     * @return \Ner0tic\FoursquareBundle\Entity\Category
      */
     public function setId( $id ) 
     {
@@ -58,7 +58,7 @@ class Category
      * 
      * @param string $name
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Category
+     * @return \Ner0tic\FoursquareBundle\Entity\Category
      */
     public function setName( $name ) 
     {
@@ -82,7 +82,7 @@ class Category
      * 
      * @param string $pluralName
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Category
+     * @return \Ner0tic\FoursquareBundle\Entity\Category
      */
     public function setPluralName( $pluralName ) 
     {
@@ -106,7 +106,7 @@ class Category
      * 
      * @param string $shortName
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Category
+     * @return \Ner0tic\FoursquareBundle\Entity\Category
      */
     public function setShortName( $shortName ) 
     {
@@ -145,7 +145,7 @@ class Category
      * 
      * @param array $icon
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Category
+     * @return \Ner0tic\FoursquareBundle\Entity\Category
      */
     public function setIcon( array $icon = array() ) 
     {
@@ -170,7 +170,7 @@ class Category
      * @param array $children
      * @param boolean $merge
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Category
+     * @return \Ner0tic\FoursquareBundle\Entity\Category
      */
     public function setChildren( array $children = array(), $merge = false ) 
     {

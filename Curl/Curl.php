@@ -1,5 +1,5 @@
 <?php
-namespace Ddnet\FoursquareBundle\Curl;
+namespace Ner0tic\FoursquareBundle\Curl;
 
 class Curl 
 {
@@ -45,7 +45,7 @@ class Curl
      * Add curl call
      * 
      * @param  $ch
-     * @return Ddnet\FoursquareBundle\Curl\CurlManager
+     * @return Ner0tic\FoursquareBundle\Curl\CurlManager
      */
     public function addCurl( $ch ) 
     {
@@ -125,7 +125,7 @@ class Curl
 
     /**
      * Get sequence
-     * @return \Ddnet\FoursquareBundle\Curl\Sequence
+     * @return \Ner0tic\FoursquareBundle\Curl\Sequence
      */
     public static function getSequence() 
     {

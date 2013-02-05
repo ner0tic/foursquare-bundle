@@ -1,8 +1,8 @@
 <?php
-namespace Ddnet\FoursquareBundle\Foursquare;
+namespace Ner0tic\FoursquareBundle\Foursquare;
 
-use Ddnet\FoursquareBundle\Exception\FoursquareNotFoundException,
-    Ddnet\FoursquareBundle\Exception\FoursquareException;
+use Ner0tic\FoursquareBundle\Exception\FoursquareNotFoundException,
+    Ner0tic\FoursquareBundle\Exception\FoursquareException;
 
 class FoursquareBase implements ArrayAccess, Countable, IteratorAggregate 
 {

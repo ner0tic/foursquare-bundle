@@ -1,9 +1,9 @@
 <?php
-namespace Ddnet\FoursquareBundle\Entity;
+namespace Ner0tic\FoursquareBundle\Entity;
 
-use Ddnet\FoursquareBundle\Entity\User,
-    Ddnet\FoursquareBundle\Entity\Venue,
-    Ddnet\FoursquareBundle\Entity\Photo;
+use Ner0tic\FoursquareBundle\Entity\User,
+    Ner0tic\FoursquareBundle\Entity\Venue,
+    Ner0tic\FoursquareBundle\Entity\Photo;
 
 class Checkin 
 {
@@ -55,7 +55,7 @@ class Checkin
      * 
      * @param string $id
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Checkin
+     * @return \Ner0tic\FoursquareBundle\Entity\Checkin
      */
     public function setId( $id ) 
     { 
@@ -79,7 +79,7 @@ class Checkin
      * 
      * @param datetime $createdAt
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Checkin
+     * @return \Ner0tic\FoursquareBundle\Entity\Checkin
      */
     public function setCreatedAt( $createdAt ) 
     {
@@ -103,7 +103,7 @@ class Checkin
      * 
      * @param string $type
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Checkin
+     * @return \Ner0tic\FoursquareBundle\Entity\Checkin
      */
     public function setType( $type ) 
     {
@@ -127,7 +127,7 @@ class Checkin
      * 
      * @param boolean $visibility
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Checkin
+     * @return \Ner0tic\FoursquareBundle\Entity\Checkin
      */
     public function setVisibility( $visibility ) 
     {
@@ -151,7 +151,7 @@ class Checkin
      * 
      * @param string $shout
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Checkin
+     * @return \Ner0tic\FoursquareBundle\Entity\Checkin
      */
     public function setShout( $shout ) 
     {
@@ -175,7 +175,7 @@ class Checkin
      * 
      * @param integer $offset
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Checkin
+     * @return \Ner0tic\FoursquareBundle\Entity\Checkin
      */
     public function setTimezoneOffset( $offset ) 
     {
@@ -186,7 +186,7 @@ class Checkin
 
     /**
      * Get User
-     * @return \Ddnet\FoursquareBundle\Entity\User
+     * @return \Ner0tic\FoursquareBundle\Entity\User
      */
     public function getUser() 
     { 
@@ -196,9 +196,9 @@ class Checkin
     /**
      * Set User
      * 
-     * @param \Ddnet\FoursquareBundle\Entity\User $user
+     * @param \Ner0tic\FoursquareBundle\Entity\User $user
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Checkin
+     * @return \Ner0tic\FoursquareBundle\Entity\Checkin
      */
     public function setUser( User $user ) 
     {
@@ -210,7 +210,7 @@ class Checkin
     /**
      * Get Venue
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Venue
+     * @return \Ner0tic\FoursquareBundle\Entity\Venue
      */
     public function getVenue() 
     { 
@@ -220,9 +220,9 @@ class Checkin
     /**
      * Set Venue
      * 
-     * @param \Ddnet\FoursquareBundle\Entity\Venue $venue
+     * @param \Ner0tic\FoursquareBundle\Entity\Venue $venue
      *
-     * @return \Ddnet\FoursquareBundle\Entity\Checkin
+     * @return \Ner0tic\FoursquareBundle\Entity\Checkin
      */
     public function setVenue( Venue $venue ) 
     {
@@ -256,7 +256,7 @@ class Checkin
      * 
      * @param array $source
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Checkin
+     * @return \Ner0tic\FoursquareBundle\Entity\Checkin
      * @throws FoursquareException
      */
     public function setSource( array $source ) 
@@ -284,10 +284,10 @@ class Checkin
     /**
      * Set Photos
      * 
-     * @param \Ddnet\FoursquareBundle\Entity\Photo $photos
+     * @param \Ner0tic\FoursquareBundle\Entity\Photo $photos
      * @param boolean $merge
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Checkin
+     * @return \Ner0tic\FoursquareBundle\Entity\Checkin
      * @throws FoursquareException
      */
     public function setPhotos( array $photos = array(), $merge = false ) 
@@ -327,7 +327,7 @@ class Checkin
      * Set Likes
      * 
      * @param array $likes
-     * @return \Ddnet\FoursquareBundle\Entity\Checkin
+     * @return \Ner0tic\FoursquareBundle\Entity\Checkin
      */
     public function setLikes( $likes ) {
       $this->likes = $likes;
@@ -375,7 +375,7 @@ class Checkin
      * 
      * @param array $score
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Checkin
+     * @return \Ner0tic\FoursquareBundle\Entity\Checkin
      */
     public function setScore( $score ) 
     {
@@ -389,7 +389,7 @@ class Checkin
      * 
      * @param array $array
      * 
-     * @return \Ddnet\FoursquareBundle\Entity\Checkin
+     * @return \Ner0tic\FoursquareBundle\Entity\Checkin
      */
     public function fromArray( $array ) {
       if( isset( $array[ 'id' ] ) ) $this->setId( $array[ 'id' ] );

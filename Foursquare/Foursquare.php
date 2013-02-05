@@ -1,12 +1,12 @@
 <?php
-namespace Ddnet\FoursquareBundle;
+namespace Ner0tic\FoursquareBundle;
 
 use Symfony\Compnent\DependencyInjection\ContainerInterface,
 
-    Ddnet\FoursquareBundle\Foursquare\FoursquareBase,
-    Ddnet\FoursquareBundle\Exception\FoursquareException,
-    Ddnet\FoursquareBundle\Exception\FoursquareBadRequestException,
-    Ddnet\FoursquareBundle\Exception\FoursquareNotFoundException;
+    Ner0tic\FoursquareBundle\Foursquare\FoursquareBase,
+    Ner0tic\FoursquareBundle\Exception\FoursquareException,
+    Ner0tic\FoursquareBundle\Exception\FoursquareBadRequestException,
+    Ner0tic\FoursquareBundle\Exception\FoursquareNotFoundException;
 
  /**
  * Foursquare API wrapper
@@ -132,7 +132,7 @@ class Foursquare implements ContainerAwareInterface {
     /**
      * Get an instance of the Foursquare library
      * 
-     * @return Ddnet\FoursquareBundle\Foursquare\Foursquare
+     * @return Ner0tic\FoursquareBundle\Foursquare\Foursquare
      */
     public static function getFoursquareInstance() 
     {
