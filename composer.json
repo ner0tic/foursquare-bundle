@@ -1,5 +1,5 @@
 {
-    "name": "Ner0tic/foursquare-bundle",
+    "name": "ner0tic/foursquare-bundle",
     "type": "symfony-bundle",
     "description": "Provides a foursquare api integration for a symfony 2.1 project.",
     "keywords": ["foursquare API checkin"],
