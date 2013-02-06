@@ -212,14 +212,7 @@ class User
         return $this;
     }
     
-    elseif(is_array($list)) {
-      $c = new \Self();
-      $c->fromArray($list);
-      return $this;
-    }
-    else  throw new FoursquareException('List should be an array or a single entity of type Ner0tic\FoursquareBundle\Entity\List');
-  }    
-  
+   
   protected $tips = array();
   public function getTips() { return $this->tips; }
   public function setTips($tips) {
