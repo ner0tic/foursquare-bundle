@@ -18,7 +18,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('Ner0tic_foursquare')->children()
+        $rootNode = $treeBuilder->root('foursquare')->children()
           ->variableNode('api_key')->defaultValue("XXX")->end()
           ->variableNode('user_id')->defaultValue("123456")->end();
 

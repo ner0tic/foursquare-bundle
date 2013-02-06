@@ -199,7 +199,7 @@ class User
             }
         }
     
-        return $this->lists[];
+        return $this->lists;
     }
     
     public function addList( fsList $list ) 

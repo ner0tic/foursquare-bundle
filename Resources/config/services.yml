@@ -1,4 +1,4 @@
 services:
-  foursquare:
-    class: Ner0tic\FoursquareBundle\Foursquare
-    arguments: ['@service_container']
+    foursquare:
+        class: Ner0tic\FoursquareBundle\Foursquare
+        arguments: ['@service_container']
